@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Gustavo */
 
 
@@ -14,3 +19,64 @@
 
 
 /* ALINE */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(250 235 215 / 44%), rgb(118 109 105 / 72%)), url("../img/imagens/norbert-levajsics-oTJ92KUXHls-unsplash.jpg") no-repeat center;
+    background-size: 100%;
+    filter: blur(50%);
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    align-items: center;
+
+}
+
+.formulario button{
+    margin-top: 12px;
+    width: 100px;
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+footer>p{
+    padding-bottom: 12px;
+}
+
+.endereco{
+    padding: 12px;
+  
+}
+
+.social{
+    padding: 12px;
+}
+
+.social p{
+    padding-bottom: 12px;
+}
+
+@media (max-width:800px){
+ footer{
+     background-size: 180%;
+ }
+   }
+   
+   @media(max-width:300px){
+    footer{
+        background-size: 200%;
+    }
+   }
