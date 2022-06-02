@@ -17,7 +17,104 @@
 
 /* JONATAS */
 
+.container-tablahe-conosco, .container-feed {
+    background: url(../img/trabalhe-conosco.png) center no-repeat;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    padding: 50px 0;
+}
+
+.box-itens-trabalhe-conosco, .box-itens-feed {
+    grid-column: 7/span 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box-itens-trabalhe-conosco img{
+    width: 35%;
+}
+
+.box-itens-trabalhe-conosco h2, .box-itens-trabalhe-conosco p{
+    color: white;
+    font-size: 3em;
+    padding: 20px 0;
+}
 
 
+.box-itens-trabalhe-conosco p{
+    font-size: 1.4em;
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+.box-itens-trabalhe-conosco button{
+    cursor: pointer;
+    color: black;
+    font-size: 1.2em;
+    padding: 8px 24px;
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+    transition-duration: 0.2s;
+}
+
+.box-itens-trabalhe-conosco button:hover{
+    letter-spacing: 10px;
+    transition-duration: 0.8s;
+}
+
+.container-feed{
+    background: #f6f3e9;
+}
+
+.container-feed .alinhamento-feedback {
+    grid-column: 2/span 18;
+    flex-direction: row;
+    gap: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-feed .alinhamento-feedback h2 {
+    font-size: 3em;
+    padding-bottom: 30px;
+}
+
+.box-itens-feed {
+    flex-direction: row;
+    gap: 4%;
+    
+}
+
+.box-itens-feed .feedback {
+    width: 1fr;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 2px #00000091;
+}
+
+.box-itens-feed .feedback > p {
+    margin-bottom: 16px;
+}
+
+.box-itens-feed .feedback .usuario{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.box-itens-feed .feedback .usuario img{
+    border-radius: 50%;
+    width: 68px;
+    margin-right: 24px;
+ }
+
+
+ @media (max-width: 736px){
+
+ }
 
 /* ALINE */
