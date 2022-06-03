@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,41 @@
 
 
 /* Gustavo */
+header {
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    background: url("../img/casal-background.jpg");
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height:80vh;
+}
+.barra-de-navegacao {
+display: flex;
+justify-content: space-between;
+margin-right: 4vw;
+align-items: center;
+}
+.barra-de-navegacao-secao {
+    text-decoration: none;
+}
+.logomarca {
+    height: 1%;
+    width: 15vw;
+    margin-top: 2vh;
+}
 
+.Lista-barra-de-navegacao{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 2vh;
+}
+
+button-barra-de-navegacao
+
+/* .conteudo-centralizizado-header {
+
+} */
 
 
 
