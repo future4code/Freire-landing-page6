@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,37 +9,77 @@
 
 /* Gustavo */
 header {
-    font-family: 'Courier New', Courier, monospace;
     color: whitesmoke;
     background: url("../img/casal-background.jpg");
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
-    height:80vh;
+    height: 70vh;
 }
+
 .barra-de-navegacao {
-display: flex;
-justify-content: space-between;
-margin-right: 4vw;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
 }
+
 .barra-de-navegacao-secao {
     text-decoration: none;
+
 }
+
 .logomarca {
     height: 1%;
     width: 15vw;
     margin-top: 2vh;
 }
 
-.Lista-barra-de-navegacao{
+.Lista-barra-de-navegacao {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
     margin-top: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
 }
 
-button-barra-de-navegacao
+button {
+    background-color: transparent;
+    width: 5em;
+    height: 3em;
+    border-radius: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+}
 
+input {
+    text-align: center;
+    border-radius: 2rem;
+    width: 100%;
+    height: 3em;
+    border: 1px solid whitesmoke;
+}
+
+.conteudo-centralizizado-header {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1em;
+    margin-top: 15vh;
+}
+
+h2.conteudo-header-titulo{
+    font-size: 2em;
+}
+p.conteudo-header-subtitulo{
+    font-size: 1em;
+    justify-self: center;
+}
 /* .conteudo-centralizizado-header {
 
 } */
