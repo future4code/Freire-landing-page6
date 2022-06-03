@@ -13,18 +13,18 @@
 }
 header {
     color: whitesmoke;
-    background: url("../img/casal-background.jpg");
+    background: url("../img/casal-background.jpg") center;
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
-    height: 70vh;
+    padding-bottom: 100px;
+    /* height: 70vh; */
 }
 
 .barra-de-navegacao {
     display: flex;
     justify-content: space-between;
     margin-left: 5vw;
-    align-items: center;
     font-family: 'Ubuntu', sans-serif;
     color: whitesmoke;
 }
@@ -47,7 +47,7 @@ header {
 
 .button-login {
     background-color: transparent;
-    width: 6em;
+    width: 6rem;
     height: 3em;
     border-radius: 2em;
     font-family: 'Ubuntu', sans-serif;
@@ -92,6 +92,7 @@ header {
 
 h2.conteudo-header-titulo{
     font-size: 2em;
+    text-align: center;
 }
 p.conteudo-header-subtitulo{
     font-size: 1em;
@@ -105,7 +106,23 @@ li a {
     font-family: 'Ubuntu', sans-serif;
 }
 
+@media (max-width:600px) {
+    .barra-de-navegacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .logomarca {
+        width: 40vw;
+    }
+
+    li a {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
 
 /*  NATA*/
 
