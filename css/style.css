@@ -372,6 +372,35 @@ main {
 
  @media (max-width: 736px){
 
+    .box-itens-trabalhe-conosco, .box-itens-feed {
+        grid-column: 5/span 12;
+    }
+    
+    .box-itens-trabalhe-conosco img {
+        width: 55%;
+    }
+
+    .box-itens-trabalhe-conosco h2{
+        font-size: 2.2em;
+    }
+
+    .box-itens-trabalhe-conosco p {
+        font-size: 1.1em;
+    }
+
+    .container-feed .alinhamento-feedback h2 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    .box-itens-feed {
+        flex-direction: column;
+    }
+
+    .box-itens-feed .feedback {
+        margin: 20px;
+    }
+
  }
 
 /* ALINE */
