@@ -23,16 +23,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(250 235 215 / 44%), rgb(118 109 105 / 72%)), url("../img/imagens/norbert-levajsics-oTJ92KUXHls-unsplash.jpg") no-repeat center;
-    background-size: 100%;
-    filter: blur(50%);
-    width: 100%;
+    background: linear-gradient(rgb(58 58 58 / 67%), rgb(42 42 42 / 79%)), url("../img/imagens/norbert-levajsics-oTJ92KUXHls-unsplash.jpg") no-repeat center;
+    background-size: cover;
     text-align: center;
     flex-direction: column;
     background-color: antiquewhite;
+    width: 100%;
 }
 
 footer img {
+    margin: 0 5px;
     height: 50px;
     width: 50px;
 }
@@ -42,23 +42,83 @@ form {
     flex-direction: column;
     padding: 12px;
     align-items: center;
+    width: 81vw;
 
 }
 
 .formulario button{
     margin-top: 12px;
-    width: 100px;
-    padding: 4px 0;
+    padding: 12px 50px;
     cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.formulario button:hover{
+    letter-spacing: 5px;
+    transition-duration: 0.2s;
+}
+
+footer p{
+    padding-bottom: 12px;
+    color: white;
+    font-size: 1.1em;
 }
 
 footer>p{
     padding-bottom: 12px;
+    padding: 32px 0 32px;
+}
+
+.box-formulario{
+    background-color: white;
+    padding: 8px;
+    margin: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: 50%; 
+}
+.formulario h2{
+    margin-top: 16px;
+    font-size: 3em;
+    color: white;
+}
+
+.box-formulario input, .box-formulario textarea{
+    border: none;
+    padding: 14px;
+    text-align: center;
+    width: 100%;
+    margin-right: 48px;
+}
+
+.box-formulario textarea{
+    height: 100px;
+}
+.box-formulario input:focus, .box-formulario textarea:focus{
+ box-shadow: 0 0 0 0;
+ outline: 0;
+}
+.box-formulario img{
+    height: 20px;
+    width: 20px;
+    margin-left: 24px;
+}
+
+.btn-formulario{
+    display: flex;
+    justify-content: center;
 }
 
 .endereco{
     padding: 12px;
-  
+}
+
+.endereco p:nth-child(1), .endereco p:nth-child(2){
+    margin-bottom: 4px;
 }
 
 .social{
@@ -69,14 +129,14 @@ footer>p{
     padding-bottom: 12px;
 }
 
+
 @media (max-width:800px){
- footer{
-     background-size: 180%;
+ form{
+     width: 100%;
+ }
+ .box-formulario{
+     width: 100%;
  }
    }
    
-   @media(max-width:300px){
-    footer{
-        background-size: 200%;
-    }
-   }
+  
