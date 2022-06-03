@@ -47,7 +47,7 @@ header {
 
 .button-login {
     background-color: transparent;
-    width: 6rem;
+    width: 5rem;
     height: 3em;
     border-radius: 2em;
     font-family: 'Ubuntu', sans-serif;
@@ -78,7 +78,7 @@ header {
     cursor:pointer;
     position: relative;
     float:left;
-    left: -3rem;
+    left: -5rem;
 }
 
 .conteudo-centralizizado-header {
@@ -101,7 +101,7 @@ p.conteudo-header-subtitulo{
 
 li a {
     text-decoration: none;
-    margin-right: 5em;
+    margin-right: 4em;
     color: whitesmoke;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -120,6 +120,15 @@ li a {
     li a {
         display: flex;
         flex-direction: column;
+    }
+    #divBuscar{
+        align-items: center;
+        float:left;
+        margin: 0 auto;
+
+    }
+    #lupaBuscar{
+        left: -2em;
     }
 
 }
