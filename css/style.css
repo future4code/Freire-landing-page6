@@ -20,35 +20,58 @@ main {
 
 .galeria1 {
     border: solid 5px;
-    display: flex;
-    justify-content: space-around
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    align-items: center;
 }
 
 .imgMain {
     border: solid 5px;
+    grid-column: 2/span 11;
+
+}
+
+.imgMainDireita {
+    background: url("/img/Republicas/2.jpg");
+    width: 100%;
+    grid-column: 8/span 9 ;
 
 }
 
 .galeria2 {
-    display: flex;
-    border: solid 5px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    color: white;
+
+    align-items: center;
     padding-top: 50px;
-    justify-content: space-around
-
-    
-
-}
-
-.imgGaleria2 {
-
+    justify-content: space-around;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/Republicas/nata.png")center no-repeat;
+    background-size: cover;
 
 }
 
+.containerQuemSomos {
+    display: flex;
+    flex-direction: column;
+    grid-column: 8/14;
+    text-align: center;
 
 
+}
+
+.containerQuemSomos>h2 {
+    font-size: 3em;
+    padding-bottom: 50px;
+
+}
+
+.containerQuemSomos p {
+    font-size: 1.4em;
+    padding-bottom: 50px;
 
 
-
+}
 
 
 
