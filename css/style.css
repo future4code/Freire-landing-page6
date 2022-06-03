@@ -5,12 +5,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 /* Gustavo */
+#imagem-de-fundo{
+    width: 100%;
+    height: 70vh;
+    opacity: 0.5;
+}
 header {
     color: whitesmoke;
     background: url("../img/casal-background.jpg");
+    background-size: cover;
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
     height: 70vh;
@@ -19,22 +23,16 @@ header {
 .barra-de-navegacao {
     display: flex;
     justify-content: space-between;
-    margin-right: 4vw;
-    margin-left: 4vw;
+    margin-left: 5vw;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Ubuntu', sans-serif;
     color: whitesmoke;
-}
-
-.barra-de-navegacao-secao {
-    text-decoration: none;
-
 }
 
 .logomarca {
     height: 1%;
     width: 15vw;
-    margin-top: 2vh;
+    margin-top: 5vh;
 }
 
 .Lista-barra-de-navegacao {
@@ -42,26 +40,45 @@ header {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    margin-top: 2vh;
-    font-family: 'Courier New', Courier, monospace;
+    margin-top: 5vh;
+    font-family: 'Ubuntu', sans-serif;
     color: whitesmoke;
 }
 
-button {
+.button-login {
     background-color: transparent;
-    width: 5em;
+    width: 6em;
     height: 3em;
     border-radius: 2em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Ubuntu', sans-serif;
     color: whitesmoke;
+    border: 1px solid white;
+    cursor:pointer;
 }
 
-input {
+#divBuscar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float:left;
+}
+
+#inputBuscar {
     text-align: center;
     border-radius: 2rem;
-    width: 100%;
+    width: 35vw;
     height: 3em;
     border: 1px solid whitesmoke;
+    background-color:transparent;
+    float:left;
+}
+
+#lupaBuscar{
+    height: 1em;
+    cursor:pointer;
+    position: relative;
+    float:left;
+    left: -3rem;
 }
 
 .conteudo-centralizizado-header {
@@ -80,9 +97,13 @@ p.conteudo-header-subtitulo{
     font-size: 1em;
     justify-self: center;
 }
-/* .conteudo-centralizizado-header {
 
-} */
+li a {
+    text-decoration: none;
+    margin-right: 5em;
+    color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+}
 
 
 
