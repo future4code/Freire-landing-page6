@@ -29,10 +29,17 @@ main {
 
 }
 
+.imgMain p {
+    padding: 5px 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
 .imgMain img {
     width: 100%;
 
 }
+
 
 .imgMainDireita {
     background: url("/img/Republicas/2.jpg") center;
@@ -56,7 +63,7 @@ main {
 .containerQuemSomos {
     display: flex;
     flex-direction: column;
-    grid-column: 8/14;
+    grid-column: 7/15;
     text-align: center;
 
 
@@ -115,32 +122,35 @@ main {
     position: relative;
     bottom: 10%;
     width: 30%;
-
 }
 
+@media (max-width:1000px) {
+    .boxPeril {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .perfilTime {
+        margin-bottom: 50px;
+    }
+
+    .containerQuemSomos {
+        grid-column: 3 / 19;
+
+    }
+
+    .galeria1 .imgMainDireita {
+        display: none;
+    }
+
+    .galeria1 .imgMain {
+        grid-column: 2/20;
+
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
