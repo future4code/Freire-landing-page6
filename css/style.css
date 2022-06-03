@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-
 /* Gustavo */
 #imagem-de-fundo{
     width: 100%;
@@ -161,7 +160,7 @@ main {
 
 
 .imgMainDireita {
-    background: url("/img/Republicas/2.jpg") center;
+    background: url("../img/Republicas/2.jpg") center;
     grid-column: 10/span 11;
     background-size: cover;
 }
@@ -496,3 +495,10 @@ footer>p{
  }
    }
    
+
+
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
