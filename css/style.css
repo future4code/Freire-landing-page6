@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-
 /* Gustavo */
 #imagem-de-fundo{
     width: 100%;
@@ -161,7 +160,7 @@ main {
 
 
 .imgMainDireita {
-    background: url("/img/Republicas/2.jpg") center;
+    background: url("../img/Republicas/2.jpg") center;
     grid-column: 10/span 11;
     background-size: cover;
 }
@@ -373,6 +372,35 @@ main {
 
  @media (max-width: 736px){
 
+    .box-itens-trabalhe-conosco, .box-itens-feed {
+        grid-column: 5/span 12;
+    }
+    
+    .box-itens-trabalhe-conosco img {
+        width: 55%;
+    }
+
+    .box-itens-trabalhe-conosco h2{
+        font-size: 2.2em;
+    }
+
+    .box-itens-trabalhe-conosco p {
+        font-size: 1.1em;
+    }
+
+    .container-feed .alinhamento-feedback h2 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    .box-itens-feed {
+        flex-direction: column;
+    }
+
+    .box-itens-feed .feedback {
+        margin: 20px;
+    }
+
  }
 
 /* ALINE */
@@ -496,3 +524,10 @@ footer>p{
  }
    }
    
+
+
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
