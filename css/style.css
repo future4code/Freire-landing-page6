@@ -1,0 +1,533 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* Gustavo */
+#imagem-de-fundo{
+    width: 100%;
+    height: 70vh;
+    opacity: 0.5;
+}
+header {
+    color: whitesmoke;
+    background: url("../img/casal-background.jpg") center;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    padding-bottom: 100px;
+    /* height: 70vh; */
+}
+.barra-de-navegacao {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5vw;
+    font-family: 'Ubuntu', sans-serif;
+    color: whitesmoke;
+}
+
+.logomarca {
+    height: 1%;
+    width: 15vw;
+    margin-top: 5vh;
+}
+
+.Lista-barra-de-navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-top: 5vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: whitesmoke;
+}
+
+.button-login {
+    background-color: transparent;
+    width: 5rem;
+    height: 3em;
+    border-radius: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    color: whitesmoke;
+    border: 1px solid white;
+    cursor:pointer;
+}
+
+#divBuscar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float:left;
+}
+
+#inputBuscar {
+    text-align: center;
+    border-radius: 2rem;
+    width: 35vw;
+    height: 3em;
+    border: 1px solid whitesmoke;
+    background-color:transparent;
+    float:left;
+}
+
+#lupaBuscar{
+    height: 1em;
+    cursor:pointer;
+    position: relative;
+    float:left;
+    left: -5rem;
+}
+
+.conteudo-centralizizado-header {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1em;
+    margin-top: 15vh;
+}
+
+h2.conteudo-header-titulo{
+    font-size: 2em;
+    text-align: center;
+}
+p.conteudo-header-subtitulo{
+    font-size: 1em;
+    justify-self: center;
+}
+
+li a {
+    text-decoration: none;
+    margin-right: 4em;
+    color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media (max-width:600px) {
+    .barra-de-navegacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logomarca {
+        width: 40vw;
+    }
+
+    li a {
+        display: flex;
+        flex-direction: column;
+    }
+    #divBuscar{
+        align-items: center;
+        float:left;
+        margin: 0 auto;
+
+    }
+    #lupaBuscar{
+        left: -2em;
+    }
+
+}
+
+/*  NATA*/
+
+main {
+    background-color: #f6f3e9;
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria1 {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+
+}
+
+.imgMain {
+    grid-column: 2/span 8;
+
+}
+
+.imgMain p {
+    padding: 5px 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.imgMain img {
+    width: 100%;
+
+}
+
+
+.imgMainDireita {
+    background: url("../img/Republicas/2.jpg") center;
+    grid-column: 10/span 11;
+    background-size: cover;
+}
+
+.galeria2 {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    color: white;
+
+    align-items: center;
+    padding-top: 90px;
+    justify-content: space-around;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/Republicas/nata2.png")center no-repeat;
+    background-size: cover;
+
+}
+
+.containerQuemSomos {
+    display: flex;
+    flex-direction: column;
+    grid-column: 7/15;
+    text-align: center;
+
+
+}
+
+.containerQuemSomos>h2 {
+    font-size: 3em;
+    padding-bottom: 30px;
+
+}
+
+.containerQuemSomos p {
+    font-size: 1.4em;
+    padding-bottom: 100px;
+
+}
+
+.galeria3 {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+
+
+}
+
+.containerTime {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-column: 3/19;
+    padding-top: 50px;
+}
+
+.containerTime>h2 {
+    font-size: 3em;
+    padding-bottom: 50px;
+
+
+}
+
+.boxPeril {
+    display: flex;
+    text-align: center;
+    gap: 0 5%;
+    margin-bottom: 80px;
+}
+
+.perfilTime {
+    box-shadow: 0px 0px 20px 2px #00000091;
+    border-radius: 10px 10px 0 0;
+    padding: 0 8px 16px 8px;
+
+}
+
+.perfilTime img {
+    border-radius: 50%;
+    position: relative;
+    bottom: 10%;
+    width: 30%;
+}
+
+@media (max-width:1000px) {
+    .boxPeril {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .perfilTime {
+        margin-bottom: 50px;
+    }
+
+    .containerQuemSomos {
+        grid-column: 3 / 19;
+
+    }
+
+    .galeria1 .imgMainDireita {
+        display: none;
+    }
+
+    .galeria1 .imgMain {
+        grid-column: 2/20;
+
+    }
+
+
+}
+
+
+
+/* JONATAS */
+
+.container-tablahe-conosco, .container-feed {
+    background: url(../img/trabalhe-conosco.png) center no-repeat;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    padding: 50px 0;
+}
+
+.box-itens-trabalhe-conosco, .box-itens-feed {
+    grid-column: 7/span 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box-itens-trabalhe-conosco img{
+    width: 35%;
+}
+
+.box-itens-trabalhe-conosco h2, .box-itens-trabalhe-conosco p{
+    color: white;
+    font-size: 3em;
+    padding: 20px 0;
+}
+
+
+.box-itens-trabalhe-conosco p{
+    font-size: 1.4em;
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+.box-itens-trabalhe-conosco button{
+    cursor: pointer;
+    color: black;
+    font-size: 1.2em;
+    padding: 8px 24px;
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+    transition-duration: 0.2s;
+}
+
+.box-itens-trabalhe-conosco button:hover{
+    letter-spacing: 10px;
+    transition-duration: 0.8s;
+}
+
+.container-feed{
+    background: #f6f3e9;
+}
+
+.container-feed .alinhamento-feedback {
+    grid-column: 2/span 18;
+    flex-direction: row;
+    gap: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-feed .alinhamento-feedback h2 {
+    font-size: 3em;
+    padding-bottom: 30px;
+}
+
+.box-itens-feed {
+    flex-direction: row;
+    gap: 4%;
+    
+}
+
+.box-itens-feed .feedback {
+    width: 1fr;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 2px #00000091;
+}
+
+.box-itens-feed .feedback > p {
+    margin-bottom: 16px;
+}
+
+.box-itens-feed .feedback .usuario{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.box-itens-feed .feedback .usuario img{
+    border-radius: 50%;
+    width: 68px;
+    margin-right: 24px;
+ }
+
+
+ @media (max-width: 736px){
+
+    .box-itens-trabalhe-conosco, .box-itens-feed {
+        grid-column: 5/span 12;
+    }
+    
+    .box-itens-trabalhe-conosco img {
+        width: 55%;
+    }
+
+    .box-itens-trabalhe-conosco h2{
+        font-size: 2.2em;
+    }
+
+    .box-itens-trabalhe-conosco p {
+        font-size: 1.1em;
+    }
+
+    .container-feed .alinhamento-feedback h2 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    .box-itens-feed {
+        flex-direction: column;
+    }
+
+    .box-itens-feed .feedback {
+        margin: 20px;
+    }
+
+ }
+
+/* ALINE */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(58 58 58 / 67%), rgb(42 42 42 / 79%)), url("../img/imagens/norbert-levajsics-oTJ92KUXHls-unsplash.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+footer img {
+    margin: 0 5px;
+    height: 50px;
+    width: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    align-items: center;
+    width: 81vw;
+
+}
+
+.formulario button{
+    margin-top: 12px;
+    padding: 12px 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.formulario button:hover{
+    letter-spacing: 5px;
+    transition-duration: 0.2s;
+}
+
+footer p{
+    padding-bottom: 12px;
+    color: white;
+    font-size: 1.1em;
+}
+
+footer>p{
+    padding-bottom: 12px;
+    padding: 32px 0 32px;
+}
+
+.box-formulario{
+    background-color: white;
+    padding: 8px;
+    margin: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: 50%; 
+}
+.formulario h2{
+    margin-top: 16px;
+    font-size: 3em;
+    color: white;
+}
+
+.box-formulario input, .box-formulario textarea{
+    border: none;
+    padding: 14px;
+    text-align: center;
+    width: 100%;
+    margin-right: 48px;
+}
+
+.box-formulario textarea{
+    height: 100px;
+}
+.box-formulario input:focus, .box-formulario textarea:focus{
+ box-shadow: 0 0 0 0;
+ outline: 0;
+}
+.box-formulario img{
+    height: 20px;
+    width: 20px;
+    margin-left: 24px;
+}
+
+.btn-formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.endereco{
+    padding: 12px;
+}
+
+.endereco p:nth-child(1), .endereco p:nth-child(2){
+    margin-bottom: 4px;
+}
+
+.social{
+    padding: 12px;
+}
+
+.social p{
+    padding-bottom: 12px;
+}
+
+
+@media (max-width:800px){
+ form{
+     width: 100%;
+ }
+ .box-formulario{
+     width: 100%;
+ }
+   }
+   
+
+
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
